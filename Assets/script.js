@@ -64,9 +64,7 @@ $(document).ready( () => {
     else {
       for (let i = 0; i < savedLocations.length; i++) {
         let checkItem = savedLocations[i].toLowerCase();
-        console.log(checkItem);
         if (checkLocation == checkItem) {
-          console.log('test');
           return
         } else {
           // push new location to array, 
@@ -480,7 +478,6 @@ $(document).ready( () => {
   // Event listener for saved searches list
   $('.search-list').on('click', (event) => {
     event.preventDefault();
-    console.log('Click!');
     const searchCityVal = $(event.target).text();
     searchResultDiv.empty();
     processWeatherData(searchCityVal);
