@@ -1,0 +1,173 @@
+
+body {
+  box-sizing: border-box;
+  background-image: url('../images/canva-empty-blue-sky-as-weather-background-MADEbjXFeOw.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #464646;
+  color: #d2e8f6;
+}
+.container-fluid {
+  padding: 0;
+}
+h1, h5 {
+  margin: 0;
+  line-height: 1.25rem;
+}
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3rem;
+  background-color: rgba(0, 0, 0, 0.65);
+}
+.set-location-btn {
+  flex-grow: 1;
+  color: #d2e8f6;
+  text-align: left;
+  padding: 0 2rem;
+}
+.header-title {
+  flex-grow: 3;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+.section-title {
+  margin-top: 1rem;
+  padding-left: 1.5rem;
+  font-size: 1.8rem;
+  font-weight: 300;
+  letter-spacing: 0.1rem;
+}
+section {
+  background-color: rgba(0, 0, 0, 0.3);
+  margin: 0.5rem;
+  border-radius: 1rem;
+  padding: 0.7rem;
+}
+#search-city-input {
+  border-radius: 0.7rem;
+}
+#search-city-btn, #search-city-btn:focus, #search-city-btn:active {
+  border: none;
+  outline: none;
+  box-shadow: none;
+  color: #d2e8f6; 
+}
+.cw-city-date {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.cw-details {
+  margin-top: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+.cw-main-temp {
+  font-size: 2.8rem;
+}
+.cw-icon {
+  font-size: 4rem;
+}
+.cw-uvi {
+  padding-top: 0.3rem;
+}
+legend {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 500;
+}
+.cw-uvi-value {
+  margin: 0 auto;
+  margin-top: 0.1rem;
+  margin-bottom: 0.1rem;
+  height: 2.2rem;
+  width: 2.2rem;
+  border-radius: 50%;
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding-top: 0.3rem;
+}
+.uvi-low {
+  background-color: #96cc01;
+}
+.uvi-moderate {
+  background-color: #feff03;
+  color: #495057;
+}
+.uvi-high {
+  background-color: #ff9927;
+}
+.uvi-very-high {
+  background-color: #ff0000;
+}
+.uvi-extreme {
+  background-color: #b900c0;
+}
+.cw-uvi-cat {
+  font-weight: 600;
+}
+.low {
+  color: #96cc01;
+}
+.moderate {
+  color: #feff03;
+}
+.high {
+  color: #ff9927;
+}
+.very-high {
+  color: #ff0000;
+}
+.extreme {
+  color: #b900c0;
+}
+.cw-wind-humidity {
+  margin-top: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+.wf-day {
+  margin-top: 0.4rem;
+  padding-bottom: 0.2rem;
+}
+.wf-details {
+  margin-top: 0.2rem;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+.wf-icon {
+  font-size: 2rem;
+}
+.app-nav {
+  height: 3rem;
+  width: 100%;
+  padding-top: 0.5rem;
+  background-color: #2a2b2d;
+  text-align: center;
+}
+.search-history-btn {
+  color: #d2e8f6;
+  font-weight: 500;
+  letter-spacing: 0.1rem;
+}
+.saved-searches {
+  background-color: transparent;
+}
+.saved-search-item {
+  border: none;
+  border-radius: 0%;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: .5rem 1.25rem;
+}
+@media only screen and (max-width: 575.98px) {
+  .container {
+    padding: 0rem;
+  }
+}

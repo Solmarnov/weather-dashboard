@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <!-- Animate.CSS CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" crossorigin="anonymous" />
+    <!-- weather-icons.min.css -->
+    <link rel="stylesheet" type="text/css" href="Assets/css/weather-icons.min.css" />
+    <!-- style.CSS -->
+    <link rel="stylesheet" type="text/css" href="Assets/css/style.css" />
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous">
+    </script>
+    <!-- script.js -->
+    <script src="Assets/script.js"></script>
+  </head>
+  <body>
+
+    <div class="container-fluid">
+      <div class="background"></div>
+
+      <nav class="text-center">
+        <h1 class="header-title">T.G.I.Forecast</h1>
+      </nav>
+    </div>
+
+    <div class="container">
+      <form action="search-city">
+        <section class="search-city-container my-3">
+          <div class="input-group">
+            <input type="text" class="form-control animated fadeIn slow" id="search-city-input" placeholder="Search city" aria-label="Search city">
+            <div class="input-group-append">
+              <button class="btn animated fadeIn slow" type="button" id="search-city-btn">Search</button>
+            </div>
+          </div>
+        </section>
+      </form>
+
+      <div class="search-result"></div>
+
+      <h2 class="section-title">Saved Searches</h2>
+      <section class="saved-searches">
+          <ul class="list-group search-list"></ul>
+      </section>
+    </div>
+
+  </body>
+</html>
